@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+    height: 97vh;
+    display: grid;
+    grid-template-columns: [col] 33% [line2] 33% [line3] auto [end] auto;
+    grid-template-rows: [start] 16.6% [row2] 16.6% [row3] 16.6% [row4] 16.6% [row5] 16.6% [row6] auto;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.item2 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.item3 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.item4 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.item5 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+
+.item6 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+
+.item7 {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.item8 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.item9 {
+  grid-row-start: 5;
+  grid-row-end: 8;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.item12 {
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  align-content: center;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  padding: 2px 0;
+  font-size: 30px;
+  align-content: center;
+  display: flex; justify-content: center; align-items: center;
+  border-width: 2px;
+  font-size: 400%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div style="background-color: #0070c0; text-align: center; border-style: solid;" class="item1">Biru Tua</div>
+  <div class="item2" style="background-color: black; color: aliceblue;border-style: solid;border-color: black;">Hitam</div>
+  <div style="background-color: #806000; color: aliceblue;border-style: solid;border-color: black; " class="item3">Coklat</div>  
+  <div class="item4" style="background-color: aliceblue;border-style: solid;">Putih</div>
+  <div class="item5" style="background-color: #ff99ff;border-style: solid;">Pink</div>
+  <div class="item6" style="background-color: #00b0f0;border-style: solid;">Biru</div>
+  <div class="item7" style="background-color: yellow;border-style: solid;">Kuning</div>
+  <div class="item8" style="background-color: purple; color: #FFFF;border-style: solid;border-color: black;">Ungu</div>
+  <div class="item9" style="background-color: #a6a6a6;border-style: solid;">Abu</div>
+  <div class="item10" style="background-color: #ff0000; color: #FFFF;border-style: solid;border-color: black;">Merah</div>
+  <div class="item11" style="background-color: #00b050;border-style: solid;">Hijau</div>
+  <div class="item12" style="background-color: #ffc000;border-style: solid; border-color: black; justify-items: center;">Oranye</div>
+
+</div>
+
+</body>
+</html>
