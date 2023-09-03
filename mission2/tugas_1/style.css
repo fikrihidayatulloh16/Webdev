@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#cart, #items {
+    width: 45%;
+    float: right;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #005f7b;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-list li {
+    width: calc(50% - 10px); /* Mengatur lebar setengah dari lebar kontainer, dengan jarak 10px antara kolom */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-list li img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#item-list li .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-list li .button-container button {
+    width: 45%; /* Mengatur lebar tombol agar ada jarak antara keduanya */
+}
+
